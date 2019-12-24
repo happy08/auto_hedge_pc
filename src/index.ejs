@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>MBB</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <% if (htmlWebpackPlugin.options.nodeModules) { %>
+  <!-- Add `node_modules/` to global paths so `require` works properly in development -->
+  <script>
+    require('module').globalPaths.push('<%= htmlWebpackPlugin.options.nodeModules.replace(/\\/g, '\\\\') %>')
+  </script>
+  <% } %>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- Set `__static` path to static files in production -->
+  <script>
+    if (process.env.NODE_ENV !== 'development') window.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\')
+  </script>
+
+  <!-- webpack builds are automatically injected -->
+  <script>
+    // require('electron').webFrame.setZoomLevelLimits(1,1)
+    // var zoom = function (e) {
+    //   var e = e || window.event;
+    //   if (e.wheelDelta && event.ctrlKey) {
+    //     event.returnValue = false
+    //   } else if (e.detail) {
+    //     event.returnValue = false;
+    //   }
+    // }
+    // if (document.addEventListener) {
+    //   document.addEventListener('DOMMouseScroll', zoom, false);
+    //   // document.addEventListener('mousewheel', (ev) => {
+    //   //   console.log('ev----',ev,ev.ctrlKey)
+    //   //   if (ev.ctrlKey) {
+    //   //     ev.preventDefault();
+    //   //     return false;
+    //   //   }
+    //   // });
+    // }
+    // window.onmousewheel = document.onmousewheel = zoom;
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+a:hover{
+  color: #333;
+}
+.fs-30{
+  font-size: 30px;
+}
+.fs-16{
+  font-size: 16px;
+}
+.clearfix {
+  font-size:8px;
+  &::after {
+    display: block;
+    height: 0;
+    content: '';
+    clear: both;
+  }
+}
+.middle{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9999;
+}
+.pagetion {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.text_r{
+  text-align: right;
+}
+.text_l{
+  text-align: left;
+}
+.text_c{
+  text-align: center;
+}
+.text_center {
+  text-align: center;
+}
+.text_right {
+  text-align: right;
+}
+.green{
+  color: #00C99D !important;
+}
+.red{
+  color: #E02020 !important;
+}
+.input_wrap input {
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Source Han Sans CN;
+  height: 40px;
+  background: #E3F8FE;
+  color: #333;
+  border: none;
+  box-sizing: border-box;
+}
+input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #aaa;
+}
+.submitBtn {
+  flex:1;
+  box-sizing: border-box;
+  height: 40px;
+  background: rgba(0, 185, 159, 1);
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+.submitBtn:hover {
+  color: #ffffff;
+}
+
+.my_record_2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+  > div {
+    width: 48%;
+    margin-top: 20px;
+    padding:10px 0;
+    background: #E3F8FE;
+    text-align: center;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+  }
+  
+}
+
+.wrapper .list {
+  // width: 420px;
+  height: 80px;
+  background: #E3F8FE;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 9px 15px;
+
+  .row_1,
+  .row_2,
+  .row_3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    > div:nth-child(1) {
+      display: flex;
+      p {
+        font-size: 12px;
+        font-family: Source Han Sans CN;
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+        line-height: 14px;
+        height: 14px;
+      }
+      > p:nth-child(1) {
+        margin-right: 15px;
+      }
+      .time {
+        color: rgba(102, 102, 102, 1);
+      }
+    }
+    > div:nth-child(2) {
+      font-size: 12px;
+      font-family: Source Han Sans CN;
+      font-weight: bold;
+      color: rgba(102, 102, 102, 1);
+      line-height: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.table_t {
+  // width: 420px;
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: #666666;
+    flex: 1;
+  }
+  .text_center {
+    text-align: center;
+  }
+  .text_right {
+    text-align: right;
+  }
+}
+.table_l {
+  // width: 420px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cccccc;
+
+  p {
+    flex: 1;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: #666666;
+    height: 60px;
+    line-height: 1;
+    padding: 25px 0;
+  }
+  .text_center {
+    text-align: center;
+  }
+  .text_right {
+    text-align: right;
+  }
+}
